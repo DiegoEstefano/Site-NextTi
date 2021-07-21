@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    
+}
+
+body {
+    background-color: #dff1ee;
+}
+
+/*-------------- Container onde vai todo o site--------------*/
+
+#container {
+    background-color: #2e3136;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/*----------------------- Cabeçalho-----------------------*/
+
+#header {
+    background-color: #2e3136;
+    position: relative;
+    max-width: 980px;
+    height: 7rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+#logo {
+    float: left;
+    padding-top: 1.8rem;
+}
+
+#letreiro {
+    float: left;
+    padding-top: 1.9rem;
+}
+
+#redes {
+    float: right;
+    padding-right: 8rem;
+    padding-top: 2rem;
+}
+
+#redes ul li {
+    padding-left: 0.8rem;
+    display: inline-block;
+    list-style: none;
+}
+
+/*----------------------- Menu-----------------------*/
+
+#background-menu {
+    background-color: white;
+    border-bottom: 5px solid #efefef;
+    border-top: 5px solid #efefef;
+    height: 90px;
+}
+
+#menu {
+    margin: auto;
+    max-width: 980px;
+}
+
+#menu ul {
+    float: left;
+    position: relative;
+    list-style: none;
+    padding-top: 1.5rem;
+}
+
+#menu ul li {
+    width: 150px;
+    float: left;
+    height: 80px;
+    
+}
+
+#menu a {
+    text-decoration: none;
+    color: #8b8b8b;
+    display: block;
+    text-align: center;
+}
+
+#menu  li:hover {
+    border-bottom: 2.5px solid #0ab9ac;
+    height: 65px;
+}
+
+#menu a:hover {
+    color: rgb(33, 210, 223);
+}
+
+.fixarRodape {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    background-color: #2e3136;
+}
+
+
+
+/*--------------- Responsividade 900px---------------*/
+
+@media screen and ( max-width: 900px) {
+    
+    /*----------------Logo e letreiro--------------------*/
+    #header {
+        background-color: #2e3136;
+        position: relative;
+        height: 15.3rem;
+        margin: auto;
+        overflow: hidden;
+    }
+    #logo {
+        float: none;
+        text-align: center;
+        padding-top: 1.8rem;
+    }
+    #logo img{
+       width: 150px;
+    }
+    #letreiro img{
+        width: 125px;
+     }
+
+    #letreiro {
+        float: none;
+        text-align: center;
+        padding-top: 1.9rem;
+    }
+    /*--------------------Redes sociais------------------*/
+    #redes ul li {
+        list-style: none;
+        padding-left: 0.1rem;
+       
+    }
+    #redes {
+        width: 100%;
+        float: none;
+      
+        text-align: center;
+    }
+
+    #redes img {
+        width: 30px;
+    }
+    /*------------Menu de serviços------------------*/
+    #background-menu {
+        background-color: white;
+        border-bottom: 5px solid #efefef;
+        border-top: 5px solid #efefef;
+        height: 500px;
+        position: relative;
+    }
+    #menu {
+        position: relative;
+        color: #efefef;
+        
+    }
+    #menu ul {
+        position: absolute;
+        right: 50%;
+        transform: translate(50%);
+        
+    }
+    #menu ul li {
+        float: none;
+        
+    }
+
+    #menu ul li a {
+        float: none;
+        border: solid white #efefef;
+        background: #2d3838;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        
+    
+    }
+    #menu a:hover {
+        color: rgb(240, 246, 246);
+    }
+    #menu li:hover {   
+            border-bottom: none;
+           
+    }
+}
